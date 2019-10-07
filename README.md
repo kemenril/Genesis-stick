@@ -3,12 +3,12 @@ An interface for converting Sega Genesis/Master System/Atari joysticks to interf
 
 This project contains AVR C code to make an ATTiny2313 (or probably a different AVR, which a bit of adjustment)
 manage a Sega Genesis (... or Master System, or Atari 2600/7800, or similar) joystick, presenting the button 
-states as normally normally open/shorted-to-ground on closed, such as an arcade machine would expect.  I have
+states as normally open/shorted-to-ground on closed, such as an arcade machine would expect.  I have
 used this successfully in my console conversion of a Neo Geo system.  Relative to the other option, which 
 appears to be buying a converter for a Nintendo stick, I tend to prefer the Sega hardware, and the DE9 ports 
 are dirt cheap and easy to get, so it makes a good home-build.
 
-The ATTiny2313 is pretty much dirt-cheap, and has exactly the right amount of pins for this project.
+The ATTiny2313 is pretty much dirt-cheap as well, and has exactly the right amount of pins for this project.
 We don't require much memory at all, and we can use the internal clock of the microcontroller, so 
 there's nothing required outside of the chip itself except for 5V power.
 
@@ -89,4 +89,4 @@ to Z so that you can use it as a game button.
 
 
 I should thank Charles Rosenberg at CMU for his original work on the six-button protocol.  I've included the text 
-file he originally produced to describe that protocol in the 90s, segasix.txt, in the repository.
+file he originally produced to describe that protocol in the 90s, segasix.txt, in the repository.  Note that it -- this file in particular -- is not my own work, I can not license you to reproduce it, and while be appears to have intended for the file to be available on the internet, if you intend to do something interesting with his work, you should contact him.
