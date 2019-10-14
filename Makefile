@@ -15,8 +15,8 @@ AVRDUDE=${BIN}/avrdude
 %.hex: %
 	${OBJCOPY} -j .text -j .data -O ihex  $< $@
 
-#Make sure you do ISP or something and mess up the flags before you're 
-#entirely done with the chip, you'll need to reprogram it again with a 
+#Make sure you don't do ISP or something and mess up the fuses before you're 
+#entirely done with the chip.  If you do, you'll need to reprogram it again with a 
 #high-voltage programmer.  May as well just set your programmer up for that
 #to start out.
 AVRDUDEFLAGS=-C ${ADCONFIG} -c ${PROGRAMMER} -p ${PART} -P ${PORT}
