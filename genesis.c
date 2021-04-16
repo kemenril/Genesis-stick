@@ -44,6 +44,8 @@
 	7 (Select)		D2
 	8 GND			GND
 	9 (Start/C)		D3
+     * Note: The "mode" button on a six button controller can apparently be read on pin 4 in pulse mode, but we don't check it.
+
 
 
 	[Output, 11 pins]
